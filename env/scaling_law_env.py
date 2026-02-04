@@ -109,7 +109,6 @@ class ScalingLawEnv:
 		if not self.agent_behaviour_analyzer.tools_flag: self.agent_behaviour_analyzer.tools_flag = True
 
 		try:
-			# Добавляем numpy в контекст для агента
 			sys.stdout = output
 			exec_globals = {"np": np}
 			exec(code, exec_globals)
